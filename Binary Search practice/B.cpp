@@ -1,5 +1,6 @@
 /*
-Time: forgot to set the timer. from 20 to 40 mins
+Solution Time: forgot to set the timer. from 20 to 40 mins
+Submission Time: 343 ms
 Link: https://codeforces.com/edu/course/2/lesson/6/1/practice/contest/283911/problem/B
 Complexity: O(n + klog(n))
 */
