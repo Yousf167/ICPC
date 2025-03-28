@@ -1,7 +1,7 @@
 /*
-Solution Time: forgot to set the timer. from 20 to 40 mins
-Submission Time: 343 ms
-Link: https://codeforces.com/edu/course/2/lesson/6/1/practice/contest/283911/problem/B
+Solution Time: 0:15:21
+Submission Time: 359 ms
+Link: https://codeforces.com/edu/course/2/lesson/6/1/practice/contest/283911/problem/C
 Complexity: O(n + klog(n))
 */
 
@@ -15,16 +15,16 @@ int getRight(int arr[], int n, int target)
       while(l < r)
       {
             int m = (l + r) / 2;
-            if(arr[m] <= target)
-            {
-                  l = m + 1;
-            }
-            else
+            if(arr[m] >= target)
             {
                   r = m;
             }
+            else
+            {
+                  l = m + 1;
+            }
       }
-      return l;
+      return r + 1;
 }
 
 int main()
