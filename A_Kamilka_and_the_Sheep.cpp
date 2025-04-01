@@ -1,5 +1,8 @@
 /*
 Link: https://codeforces.com/problemset/problem/2092/A
+Time: blash ne3ed XD
+complexity: O(t * n * log(n))
+runtime: 66ms
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -42,7 +45,15 @@ ostream& operator<<(ostream& os, const T (&arr)[N]) {
 }
 
 
-
+void solve()
+{
+      int n;
+      cin>>n;
+      vector<int> a(n);
+      for(int i = 0; i < n; i++) cin>>a[i];
+      sort(all(a));
+      cout<<a[n-1] - a[0]<<endl;
+}
 
 int main()
 {
@@ -51,6 +62,8 @@ int main()
       cin>>t;
       while(t--)
       {
+            solve();
+      /*       
             int n;
             cin>>n;
             int sheep[n];
@@ -95,5 +108,6 @@ int main()
             }
 
             cout<<max<<endl;
+      */
       }
 }
