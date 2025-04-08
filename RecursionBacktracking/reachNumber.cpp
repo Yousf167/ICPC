@@ -4,8 +4,6 @@ using namespace std;
 
 void reachNumber(int start, int end, int &count)
 {
-
-
       if(start == end)
       {
             count++;
